@@ -1,0 +1,32 @@
+{
+  "name": "nono-llm",
+  "version": "0.1.0",
+  "description": "Implementation of functions based upon the FLAIR framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Mike Lay",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": ["dist"],
+  "jest": {
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "testPathIgnorePatterns": ["dist", "mode_modules"]
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  }
+}
